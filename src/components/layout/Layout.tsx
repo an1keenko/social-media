@@ -1,9 +1,10 @@
 import { PropsWithChildren } from 'react'
 import { Sidebar } from '@/components/layout/sidebar/Sidebar'
+import styles from './Layout.module.scss'
 
 export default function LayoutClient({ children }: PropsWithChildren<unknown>) {
   return (
-    <main>
+    <main className={styles.layout}>
       <Sidebar />
       <section>{children}</section>
     </main>
